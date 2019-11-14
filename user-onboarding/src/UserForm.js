@@ -55,12 +55,12 @@ export default withFormik({
     name: yup.string().required(),
     email: yup
       .string()
-      .required('Email is required')
-      .email('Email not valid'),
+      .required('Email is required.')
+      .email('Email not valid.'),
     password: yup
       .string()
       .min(8, 'Password must be 8 characters or longer.')
-      .required('Password is required')
+      .required('Password is required.')
   }),
 
   handleSubmit(values, { resetForm, setSubmitting, setStatus }) {
