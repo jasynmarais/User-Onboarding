@@ -1,15 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
-import UserForm from './Form';
-
-import initialValues from './data';
+import UserForm from './UserForm';
 
 function App() {
-  const [userList, setUserList] = useState(initialValues);
-  const [error, setError] = useState('');
   return (
-    <div className="App">
-      <UserForm initialValues={initialValues} />
+    <div>
+      <UserForm />
     </div>
   );
 }
